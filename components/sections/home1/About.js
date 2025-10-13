@@ -4,9 +4,8 @@ import Image from "next/image";
 export default function About() {
     return (
         <>
-            <section className="about-one about_spacing" id="about-us" dir="rtl">
-                {/* <div className="shape1 float-bob-y"><img src="assets/img/shape/about-v1-shape1.png" alt=""/></div> */}
-                <div className="container banner_container_main_except">
+            <section className="about-one about_spacing" id="about-us">
+                <div className="container banner_container_main_except component_container">
                     <div className="row">
 
                            <div className="col-xl-12 wow animated fadeInLeft" data-wow-delay="0.1s">
@@ -17,43 +16,24 @@ export default function About() {
                                     </p>
                                 </div>
                                 <div className="sec-title">
-                                    <h2 className="welcome_emaar_styling">مرحبًا بكم في خور دبي</h2>
+                                    <h2 className="welcome_emaar_styling"><span className="welcome_emaar_styling_span">مرحبًا بكم في مرسى خور دبي</span></h2>
                                 </div>
-
-                                {/* <div className="text-box">
-                                    <h3 className="about_subheading">"Our goal is to build sustainable, livable, and dynamic urban spaces for generations to come."</h3>
-                                </div> */}
 
                                 <div className="text-box">
 <p className="about_para">
-    <span className="about_para_span">اختبر التناغم المثالي بين العيش العصري وجمال الطبيعة في خور دبي، موطن المعالم الأيقونية مثل مرسى خور دبي – الجنة لعشّاق اليخوت – ومحمية رأس الخور للحياة الفطرية، المشهورة بتنوّعها البيئي وغناها بالطيور الفلامنجو الجميلة. وتوفر بحيراتها الهادئة أجواءً مثالية للمشي الهادئ وسط الطبيعة ومراقبة الطيور في أجواء من السكينة.</span>
+    <span className="about_para_span">يُعد مرسى خور دبي موطنًا للمعالم البارزة مثل مرسى خور دبي — جنة لعشاق اليخوت — ومحمية رأس الخور للحياة البرية، المشهورة بتنوعها البيئي وطيورها الجميلة من طيور الفلامنغو. تدعوك بحيراتها الهادئة للاستمتاع بجولات طبيعية خلابة ومراقبة الطيور في أجواء من الهدوء والسكينة.</span>
 </p><br/>
 
 <p className="about_para">
-    <span className="about_para_span">بفضل موقعه الاستراتيجي، يتمتع خور دبي باتصال مباشر مع وسط مدينة دبي ومطار دبي الدولي والتمديد القادم لمترو دبي، مما يجمع بين الفخامة وسهولة الوصول. ومع ممشاه الخلاب، ومطاعمه العالمية، ومدارسه، ومرافقه الصحية، ومناطقه الترفيهية، يُعد خور دبي عنوانًا مميزًا للعيش والاستثمار على حدٍ سواء.</span>
+    <span className="about_para_span">بفضل موقعه المثالي، يتمتع مرسى خور دبي بسهولة الوصول إلى وسط مدينة دبي، ومطار دبي الدولي، وتوسعة مترو دبي القادمة. ومع ممشاه الخلاب، ومطاعمه العالمية، ومدارسه، ومرافق الرعاية الصحية، ووجهاته الترفيهية، يُعد المجتمع عنوانًا مميزًا للعيش والاستثمار على حد سواء.</span>
 </p><br/>
 
 <p className="about_para">
-    <span className="about_para_span">اختر من بين مجموعة رائعة من الشقق والبنتهاوس والفنادق الفاخرة مثل فيدا خور دبي والعنوان هاربر بوينت وقصر الخور، وجميعها تتميز بإطلالات خلابة على الخور وأفق دبي الساحر. يمكن للمقيمين والزوار الاستمتاع بتجارب تناول الطعام الراقية، والاسترخاء في المسابح العلوية، واستكشاف تجارب التسوق الفاخرة – كل ذلك في وجهة استثنائية واحدة.</span>
+    <span className="about_para_span">اكتشف مجموعة من الوحدات السكنية التي تشمل الشقق الأنيقة والبنتهاوس والفنادق الفاخرة مثل فندق فيدا كريك هاربر، وفندق العنوان هاربر بوينت، وقصر رزيدنس — جميعها تتميز بإطلالات خلابة على الخور وأفق دبي. يمكن للمقيمين والزوار الاستمتاع بتناول المأكولات الفاخرة، والاسترخاء في المسابح العلوية، واستكشاف تجارب التسوق الراقية — كل ذلك في وجهة واحدة استثنائية.</span>
 </p>
                                 </div>
                             </div>
                         </div>
-
-                        {/* <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12 wow animated fadeInRight" data-wow-delay="0.1s">
-                            <div className="about-one__img about_i">
-                                <div className="inner">
-                                    <Image
-  src="/assets/img/about/about_us.jpg"
-  alt="About Us"
-  width={600} 
-  height={350}
-  style={{objectFit: "cover"}}
-/>
-
-                                </div>
-                            </div>
-                        </div> */}
 
                     </div>
                 </div>

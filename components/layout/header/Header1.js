@@ -11,7 +11,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                     {/* header-lower */}
                     <div className="auto-container">
                         <div className="menu-area__inner">
-                            <div className="mobile-nav-toggler" onClick={handleMobileMenu}><i className="fas fa-bars"></i></div>
+                            {/* <div className="mobile-nav-toggler" onClick={handleMobileMenu}><i className="fas fa-bars"></i></div> */}
                             <div className="menu-wrap">
                                 <nav className="menu-nav">
                                     <div className="main-header-one__inner">

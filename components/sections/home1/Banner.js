@@ -94,7 +94,7 @@ export default function Banner() {
 
     if (result.result) {
       toast.success(
-  "شكرًا لتواصلك معنا. تم استلام استفسارك وسنتواصل معك قريبًا.",
+  "Thank you for reaching out. Your inquiry has been received and we will contact you soon.",
   {
     duration: 5000, 
   }
@@ -108,7 +108,7 @@ export default function Banner() {
     } else {
       setDisableBtn(false);
       toast.error(
-  "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+  "Something Went Wrong. Please Try Again.",
   {
     duration: 5000,
   }
@@ -118,7 +118,7 @@ export default function Banner() {
     setDisableBtn(false);
     console.error("Error submitting lead:", error);
        toast.error(
-  "حدث خطأ ما. يرجى المحاولة مرة أخرى.",
+  "Something Went Wrong. Please Try Again.",
   {
     duration: 5000,
   }
@@ -135,11 +135,11 @@ export default function Banner() {
           style={{backgroundImage: 'url(assets/img/slider/emaar_img_2.jpg)'}}
           >
             </div>
-            <div className="container banner_container_main">
+            <div className="container banner_container_main" dir='rtl'>
                 <div className="main-slider-one__single">
-                   <div className="container" dir='rtl'>
+                   <div className="container component_container">
 
-                    <Link href="/" passHref>
+                    <Link href="/" passHref className='logo_styling'>
   <Image
     src="/assets/icon/emaar_logo.png"
     alt="emaar_logo"
@@ -155,7 +155,7 @@ export default function Banner() {
         <div className='banner_text_container'>
           <p className='heading_middle heading'>خـــور دبـــي</p>
           <h1 className='heading_middle sub_heading'>منازل فاخرة تبدأ من 1.7 مليون درهم إماراتي*</h1>
-        <p className='heading_middle content'>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي</p>
+        <p className='heading_middle content'>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي.</p>
         </div>
 
         <div className="btn-box">

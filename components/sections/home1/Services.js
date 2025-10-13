@@ -11,118 +11,126 @@ export default function Features() {
         <>
         
         {/*Start Feauture One*/}
-        <section className="feauture-one service_padding" id="around-the-corner" style={{paddingTop: 0}} dir="rtl">
-            <div className="container banner_container_main_feature">
+        <section className="feauture-one service_padding" id="around-the-corner" style={{paddingTop: 0}}>
+            <div className="container banner_container_main_feature component_container" dir="rtl">
               <div>
                                     <p className="small_heading">
-                                        تميز التطوير
-
+                                        التميز في التطوير
                                     </p>
                                 </div>
                 <div className="sec-title" style={{marginTop: 15, paddingBottom: 0}}>
                                     <h2 className="why_invest">لماذا إعمار؟</h2>
                                 </div>
                                 <p className="about_para services_cont">
-                                    <span className="about_para_span">شركة إعمار العقارية، واحدة من أكثر شركات تطوير العقارات تكاملاً وقيمة وإعجابًا في العالم، تُشكّل أسلوب حياة المستقبل. عند شراء عقار من إعمار، فإنك تستثمر في اسم يمكنك الوثوق به، وفي أسلوب حياة يمكنك الاستمتاع به، وفي مجتمع يمكنك الازدهار فيه، كل ذلك داخل مدينة تتحقق فيها الأحلام.</span>
+                                    <span className="about_para_span">
+                                    إعمار العقارية، إحدى أكثر شركات التطوير العقاري تكاملاً وقيمةً وإعجابًا في العالم، تشكل أسلوب حياة المستقبل. عندما تشتري عقارًا من إعمار، فأنت تستثمر في اسم يمكنك الوثوق به، وأسلوب حياة يمكنك الاستمتاع به، ومجتمع يمكنك الازدهار فيه، وكل ذلك ضمن مدينة تتحقق فيها الأحلام.
+                                    </span>
                                 </p>
                 <div className="row service_c">
 
-                   <div className="col-xl-3 col-lg-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="highlighted" 
-    >
-        <div className="feauture-one__single-text">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="highlighted" 
+                        >
+                            <div className="feauture-one__single-text">
 
-          <div className="feauture-one__single-bottom">
-            <div className="icon-box">
-                <span className="icon-plane" style={{color: "#ffffff"}}>
+                             <div className="why_c">
+                               <div className="feauture-one__single-bottom">
+                                <div className="icon-box">
+                                    <span className="icon-plane" style={{color: "#ffffff"}}>
 <FaHouseUser className="icon-plane" size={30}/> 
-                </span>
-                
-            </div>
-        </div>
+                                    </span>
+                                    
+                                </div>
+                            </div>
 
- <h3 className="investment_content" style={{color: "#ffffff"}}>
-<span className="investment_content_para" style={{color: "#ffffff"}}>116,500+</span></h3>
+ <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>+116,500</span></h3>
+                             </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>الوحدات المسلمة حتى يوليو 2024.</span>
+  <span className="about_para_span" style={{color: "#ffffff"}}>وحدات تم تسليمها حتى يوليو 2024.</span>
 </p> 
-        </div>
-    </div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
- <div className="col-xl-3 col-lg-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="highlighted" 
-    >
-        <div className="feauture-one__single-text">
+                     <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="highlighted"
+                        >
+                            <div className="feauture-one__single-text">
 
-          <div className="feauture-one__single-bottom">
-            <div className="icon-box">
-                <span className="icon-plane" style={{color: "#ffffff"}}>
+                               <div className="why_c">
+                                <div className="feauture-one__single-bottom">
+                                <div className="icon-box">
+                                    <span className="icon-plane" style={{color: "#ffffff"}}>
 <FaBuilding className="icon-plane" size={30}/> 
-                </span>
-                
-            </div>
-        </div>
+                                    </span>
+                                    
+                                </div>
+                            </div>
 
- <h3 className="investment_content" style={{color: "#ffffff"}}>
-<span className="investment_content_para" style={{color: "#ffffff"}}>30,000+</span></h3>
+ <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>+30,000</span></h3>
+                              </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>المساكن تحت التطوير في الإمارات.</span>
+  <span className="about_para_span" style={{color: "#ffffff"}}>مساكن قيد التطوير في الإمارات العربية المتحدة.</span>
 </p> 
-        </div>
-    </div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
- <div className="col-xl-3 col-lg-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="highlighted" 
-    >
-        <div className="feauture-one__single-text">
+                     <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="highlighted"
+                        >
+                            <div className="feauture-one__single-text">
 
-          <div className="feauture-one__single-bottom">
-            <div className="icon-box">
-                <span className="icon-plane" style={{color: "#ffffff"}}>
+                              <div className="why_c">
+                               <div className="feauture-one__single-bottom">
+                                <div className="icon-box">
+                                    <span className="icon-plane" style={{color: "#ffffff"}}>
 <FaChartLine className="icon-plane" size={30}/> 
-                </span>
-                
-            </div>
-        </div>
+                                    </span>
+                                    
+                                </div>
+                            </div>
 
- <h3 className="investment_content" style={{color: "#ffffff"}}>
-<span className="investment_content_para" style={{color: "#ffffff"}}>56%</span></h3>
+ <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>56%</span></h3>
+                             </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>زيادة في مبيعات العقارات في النصف الأول من 2024.</span>
+  <span className="about_para_span" style={{color: "#ffffff"}}>زيادة في مبيعات العقارات في النصف الأول من عام 2024.</span>
 </p> 
-        </div>
-    </div>
-</div>
+                            </div>
+                        </div>
+                    </div>
 
- <div className="col-xl-3 col-lg-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="highlighted" 
-    >
-        <div className="feauture-one__single-text">
+                     <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div className="highlighted"
+                        >
+                            <div className="feauture-one__single-text">
 
-          <div className="feauture-one__single-bottom">
-            <div className="icon-box">
-                <span className="icon-plane" style={{color: "#ffffff"}}>
+                              <div className="why_c">
+                               <div className="feauture-one__single-bottom">
+                                <div className="icon-box">
+                                    <span className="icon-plane" style={{color: "#ffffff"}}>
 <FaGlobe className="icon-plane" size={30}/> 
-                </span>
-                
-            </div>
-        </div>
+                                    </span>
+                                    
+                                </div>
+                            </div>
 
- <h3 className="investment_content" style={{color: "#ffffff"}}>
-<span className="investment_content_para" style={{color: "#ffffff"}}>12+ دولة</span></h3>
+ <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>+12 دولة</span></h3>
+                             </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>وجود رائد في الأسواق العالمية.</span>
+  <span className="about_para_span" style={{color: "#ffffff"}}>حضور قوي في الأسواق العالمية.</span>
 </p> 
-        </div>
-    </div>
-</div>
-
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -135,7 +143,7 @@ export default function Features() {
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            سجّل اهتمامك
+            سجل اهتمامك
           </button>
 </div>
         </section>

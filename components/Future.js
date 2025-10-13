@@ -5,20 +5,19 @@ import { FaBuilding, FaCity, FaDollarSign, FaGift, FaHouseUser, FaTree } from "r
 export default function Future() {
     return (
         <>
-            <section className="about-one future_styling" id="about-us" dir="rtl">
-                {/* <div className="shape1 float-bob-y"><img src="assets/img/shape/about-v1-shape1.png" alt=""/></div> */}
-                <div className="container banner_container_main_except">
+            <section className="about-one future_styling" id="about-us">
+                <div className="container banner_container_main_except component_container" dir="rtl">
                     <div className="row minus_styling">
 
                            <div className="col-xl-12 wow animated fadeInLeft" data-wow-delay="0.1s">
                             <div className="about-one__content">
                                 <div className="sec-title">
-                                    <h2 className="welcome_emaar_styling">مستقبل الحياة على الواجهة المائية</h2>
+                                    <h2 className="welcome_emaar_styling">
+                                        <span className="welcome_emaar_styling_span">
+                                            مستقبل الحياة على الواجهة المائية
+                                        </span>
+                                    </h2>
                                 </div>
-
-                                {/* <div className="text-box">
-                                    <h3 className="about_subheading">"Our goal is to build sustainable, livable, and dynamic urban spaces for generations to come."</h3>
-                                </div> */}
 
                                 <div className="text-box">
 <p className="about_para">
@@ -32,78 +31,77 @@ export default function Future() {
 
                                 <div className="row future_row">
                                 
-                                                    <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                                        <div className="feauture-one__single" 
-                                                        >
-                                                            <div className="feauture-one__single-text">
-                                
-                                                              <div className="feauture-one__single-bottom">
-                                                                <div className="icon-box">
-                                                                    <span className="icon-plane">
-                                <FaBuilding className="icon-plane" size={30}/> 
-                                                                    </span>
-                                                                    
-                                                                </div>
-                                                            </div>
+  <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div className="feauture-one__single">
+      <div className="feauture-one__single-text">
 
-                                <h3 className="investment_content">
-<span className="investment_content_para">٧١١٬٣٩٩ متر مربع</span></h3>
-                                
-                                <p className="investment_text">
-    <span className="about_para_span">شقق مفروشة بالخدمة</span>
-</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                  <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                                        <div className="feauture-one__single" 
-                                                        >
-                                                            <div className="feauture-one__single-text">
-                                
-                                                              <div className="feauture-one__single-bottom">
-                                                                <div className="icon-box">
-                                                                    <span className="icon-plane">
-                                <FaCity className="icon-plane" size={30}/> 
-                                                                    </span>
-                                                                    
-                                                                </div>
-                                                            </div>
+        <div className="feauture-one__single-bottom">
+          <div className="icon-box">
+            <span className="icon-plane">
+              <FaBuilding className="icon-plane" size={30}/> 
+            </span>
+          </div>
+        </div>
 
-                                <h3 className="investment_content">
-<span className="investment_content_para">٧.٤ مليون متر مربع</span></h3>
-                            
-                                <p className="investment_text">
-    <span className="about_para_span">المساحات السكنية</span>
-</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                
-                                                     <div className="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                                        <div className="feauture-one__single" 
-                                                        >
-                                                            <div className="feauture-one__single-text">
-                                
-                                                              <div className="feauture-one__single-bottom">
-                                                                <div className="icon-box">
-                                                                    <span className="icon-plane">
-                                <FaTree className="icon-plane" size={30}/> 
-                                                                    </span>
-                                                                    
-                                                                </div>
-                                                            </div>
+        <h3 className="investment_content">
+          <span className="investment_content_para">711,399 متر مربع</span>
+        </h3>
 
-<h3 className="investment_content">
-<span className="investment_content_para">٥٠٠٬٠٠٠ متر مربع</span></h3>
-                                
-                                <p className="investment_text">
-    <span className="about_para_span">الحدائق والمساحات المفتوحة</span>
-</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                
-                                                </div>
+        <p className="investment_text">
+          <span className="about_para_span">شقق فندقية.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div className="feauture-one__single">
+      <div className="feauture-one__single-text">
+
+        <div className="feauture-one__single-bottom">
+          <div className="icon-box">
+            <span className="icon-plane">
+              <FaCity className="icon-plane" size={30}/> 
+            </span>
+          </div>
+        </div>
+
+        <h3 className="investment_content">
+          <span className="investment_content_para">7.4 مليون متر مربع</span>
+        </h3>
+
+        <p className="investment_text">
+          <span className="about_para_span">مساحة سكنية.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+    <div className="feauture-one__single">
+      <div className="feauture-one__single-text">
+
+        <div className="feauture-one__single-bottom">
+          <div className="icon-box">
+            <span className="icon-plane">
+              <FaTree className="icon-plane" size={30}/> 
+            </span>
+          </div>
+        </div>
+
+        <h3 className="investment_content">
+          <span className="investment_content_para">500,000 متر مربع</span>
+        </h3>
+
+        <p className="investment_text">
+          <span className="about_para_span">حدائق ومساحات مفتوحة.</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
                             </div>
                         </div>
 

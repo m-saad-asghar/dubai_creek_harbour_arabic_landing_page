@@ -11,12 +11,11 @@ export default function Map() {
         <>
         
         {/*Start Feauture One*/}
-        <section className="feauture-one map_cont service_padding" id="around-the-corner" style={{paddingTop: 0}} dir="rtl">
-            <div className="container banner_container_main_feature map_styling">
+        <section className="feauture-one map_cont service_padding" id="around-the-corner" style={{paddingTop: 0}}>
+            <div className="container banner_container_main_feature map_styling component_container" dir="rtl">
               <div>
                                     <p className="small_heading">
                                         التفاصيل
-
                                     </p>
                                 </div>
                 <div className="sec-title" style={{marginTop: 15, paddingBottom: 0}}>
@@ -43,7 +42,7 @@ export default function Map() {
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            سجّل اهتمامك
+            سجل اهتمامك
           </button>
 </div>
 
