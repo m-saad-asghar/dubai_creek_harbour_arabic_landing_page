@@ -1976,6 +1976,7 @@ Feauture One
     margin-bottom: 30px;
     z-index: 1;
     background-color: #0b4a35;
+    min-height: 240px;
 }
 
 .feauture-one__single::before {

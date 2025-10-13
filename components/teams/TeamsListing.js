@@ -21,7 +21,7 @@ export default function TeamsListing() {
   const images = [
   {
     id: 1,
-    src: "/assets/img/gallery/creek_1.jpg",
+    src: "/assets/img/gallery/creek_main.jpg",
     alt: "Gallery Image 1",
     link: "#home",
     // heading: "Townhouses Starting from AED 3.2M",
@@ -92,13 +92,15 @@ export default function TeamsListing() {
             transition: "all 0.3s ease",
           }}
         >
-          <Image
-            src={image.src}
-            alt={image.alt}
-            width={150}
-            height={200}
-            style={{ objectFit: "cover", display: "block" }}
-          />
+        <Image
+    src={image.src}
+    alt={image.alt}
+    width={150}
+    height={200}
+    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+    style={{ objectFit: "cover", display: "block" }}
+    priority
+  />
 
           {/* Overlay for heading & location */}
           <div
