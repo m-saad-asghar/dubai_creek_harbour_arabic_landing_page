@@ -40,46 +40,20 @@ export default function TeamsListing() {
     src: "/assets/img/gallery/creek_3.jpg",
     alt: "Gallery Image 3",
     link: "#home",
-    // heading: "Villas Starting from AED 4.36M",
-    //  location: "THE VALLEY"
   },
-  // {
-  //   id: 4,
-  //   src: "/assets/img/gallery/emaar_4.webp",
-  //   alt: "Gallery Image 4",
-  //   link: "#home",
-  //   heading: "Townhouses Starting from AED 3M",
-  //    location: "EMAAR SOUTH"
-  // },
-  // {
-  //   id: 5,
-  //   src: "/assets/img/gallery/emaar_5.webp",
-  //   alt: "Gallery Image 5",
-  //   link: "#home",
-  //   heading: "Apartments Starting from AED 1.6M",
-  //   location: "DUBAI HILLS ESTATE"
-  // },
-  // {
-  //   id: 6,
-  //   src: "/assets/img/gallery/emaar_7.png",
-  //   alt: "Gallery Image 6",
-  //   link: "#home",
-  //   heading: "Apartments Starting from AED 1.7M",
-  //   location: "AL MARJAN ISLAND"
-  // },
 ];
 
 
   return (
     <Layout>
       <section className="team-two cont" id="gallery">
-        <div className="container gallery_container_styling">
+        <div className="container gallery_container_styling component_container" dir="rtl">
           {/* <div className="sec-title gallery_container">
             <h2 className="gallery_styling">FEATURED EMAAR PROPERTIES</h2>
           </div> */}
 
           {/* Normal grid view (unchanged) */}
-          <div className="row">
+          <div className="row team_listing_styling">
         {images.map((image) => (
   <div key={image.id} className="col-xl-4 col-lg-4">
     <div className="team-two__single">
@@ -92,15 +66,16 @@ export default function TeamsListing() {
             transition: "all 0.3s ease",
           }}
         >
-        <Image
+          <div style={{ position: "relative", width: "100%", height: "200px" }}>
+  <Image
     src={image.src}
     alt={image.alt}
-    width={150}
-    height={200}
+    fill
     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     style={{ objectFit: "cover", display: "block" }}
     priority
   />
+</div>
 
           {/* Overlay for heading & location */}
           <div
@@ -146,7 +121,7 @@ export default function TeamsListing() {
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            سجّل اهتمامك
+            سجل اهتمامك
           </button>
         </div>
       </div>
@@ -154,7 +129,7 @@ export default function TeamsListing() {
   </div>
 ))}
 
-<div className="btn_style">
+{/* <div className="btn_style">
   <button
             className="hover_external_btn"
             onClick={() => {
@@ -162,9 +137,9 @@ export default function TeamsListing() {
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            سجّل اهتمامك
+            REGISTER INTEREST
           </button>
-</div>
+</div> */}
 
 
           </div>

@@ -63,8 +63,20 @@
 }
 @font-face {
   font-family: 'LatoBold';
-  src: url('/fonts/lato/Lato-Regular.ttf') format('truetype');
+  src: url('/fonts/lato/Lato-Bold.ttf') format('truetype');
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatoLight';
+  src: url('/fonts/lato/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LatoNormal';
+  src: url('/fonts/lato/Lato-Regular.ttf') format('truetype');
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -213,6 +225,10 @@ h1 {
     font-size: 2.5rem;
 }
 
+.line-break {
+  display: inline; /* default inline */
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -232,6 +248,10 @@ h5 {
 h6 {
     font-size: 1rem;
 }
+
+ .team_listing_styling {
+        margin-left: 65px !important;
+    }
 
 .heading {
    letter-spacing: 1px !important; 
@@ -268,18 +288,31 @@ h6 {
     margin-bottom: 40px;
 }
 
+.main_banner {
+    height: 78%;
+}
+
+.min_hei {
+    min-height: 158px;
+}
+
 .banner_container_main {
-    padding-left: 100px !important;
+    padding-left: 80px !important;
     padding-right: 80px !important;
 }
 
 .banner_container_main_feature {
-padding-left: 100px !important;
-    padding-right: 80px !important;
+padding-left: 130px !important;
+    padding-right: 130px !important;
+}
+
+.selected-flag {
+    margin-right: 10px !important;
+    padding-right: 16px !important;
 }
 
 .content {
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'LatoLight', sans-serif !important;
     font-weight: 300 !important;
     font-size: 16px !important;
     line-height: 24px !important;
@@ -287,16 +320,27 @@ padding-left: 100px !important;
     padding-top: 20px;
 }
 
+.seperater {
+        margin-right: 20px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
 .input_styling {
    border-style: solid;
     border-width: 1px;
     border-color: #232323;
     background-color: #fff;
-    color: #232323;
+    color: #757575 !important;
     border-radius: 2px;
     padding-left: 18px;
     padding-right: 18px;
     height: 50px;
+font-size: 15px !important;
+    line-height: 24px !important;
+        font-family: 'LatoNormal', sans-serif !important;
+    font-weight: 400 !important;
 }
 
 .about_para_span {
@@ -304,9 +348,47 @@ padding-left: 100px !important;
     font-size: 16px !important;
     line-height: 24px !important;
     /* color: #000; */
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'LatoLight', sans-serif !important;
     /* font-family: 'Lato', sans-serif !important; */
     font-weight: 300 !important;
+}
+
+.contact-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.contact-box .contact-separator {
+  display: inline;
+}
+
+.about_paragraph_span {
+    font-style: normal;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 300 !important;
+}
+.privacy_policy_footer {
+    margin-top: 13px !important;
+}
+
+.map_background {
+        display: block;
+    background: rgba(255, 255, 255, 0);
+    background-image: url(//d9hhrg4mnvzow.cloudfront.net/property.emaar.com/en/investment/8ddecfc4-emaar-map-web-v2-02.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(0px * var(--scale, 1));
+    border-radius: calc(0px * var(--scale, 1));
+    width: 100%;
+    height: calc(850px * var(--scale, 1));
+    position: relative;
 }
 
 .about_para {
@@ -321,6 +403,13 @@ padding-left: 100px !important;
     font-family: 'Lato', sans-serif !important;
     font-weight: 300 !important;
     color: #000; */
+}
+
+.about_paragraph {
+    font-size: 16px !important;
+    line-height: 24px !important;
+        font-family: 'Lato', sans-serif !important;
+    font-weight: 300 !important;
 }
 
 .investment_text {
@@ -351,18 +440,23 @@ padding-left: 100px !important;
   display: inline-block; /* ensures line aligns properly */
   padding-right: 15px; /* spacing before the line */
 }
+.contact-form {
+    margin-left: 30px;
+}
 
-.small_heading::after {
+.small_heading::before {
   content: "";
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 100%;
+  right: 100%;
   width: 120px; /* adjust as needed */
   height: 1px;
   background-color: #9D9D9C; /* matches text color */
   opacity: 0.8; /* optional subtle effect */
+  margin-right: 10px; /* optional spacing between line and text */
 }
+
 
 
 .about_subheading {
@@ -377,9 +471,28 @@ padding-left: 100px !important;
 }
 
 .gallery_container_styling {
-    padding-left: 100px !important;
-    padding-right: 100px !important;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
 }
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+   /* border-style: solid; */
+    /* border-width: 1px; */
+    /* border-color: #232323; */
+    background-color: #fff;
+    color: #757575 !important;
+    border-radius: 2px;
+    /* padding-left: 18px;
+    padding-right: 18px; */
+    height: 50px;
+font-size: 15px !important;
+    line-height: 24px !important;
+        font-family: 'LatoNormal', sans-serif !important;
+    font-weight: 300 !important;
+}
+
 
 .gallery_container {
     padding-bottom: 32px !important;
@@ -408,7 +521,7 @@ padding-left: 100px !important;
 .btn_style_invest {
     display: flex;
     justify-content: center;
-    margin-top: 0px;
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
@@ -460,6 +573,15 @@ padding-left: 100px !important;
     text-transform: uppercase !important;
 }
 
+.qr_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-widget__links {
+    margin-right: 0 !important;
+}
+
 /* show button only when image hovered */
 .inner:hover .hover-btn {
   opacity: 1;
@@ -481,10 +603,6 @@ padding-left: 100px !important;
   background-color: rgba(0, 0, 0, 0); /* default transparent */
   transition: background-color 0.3s ease;
   z-index: 1;
-}
-
-.react-tel-input .selected-flag {
-    padding-right: 23px !important;
 }
 
 
@@ -582,7 +700,7 @@ padding-left: 100px !important;
 }
 
 .banner_container {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .form_text {
@@ -658,6 +776,7 @@ input {
 
 .down_styling {
     color: #ffffff;
+     font-family: 'LatoLight', sans-serif !important;
 }
 
 .modern-checkbox:checked::after {
@@ -683,7 +802,7 @@ input {
     font-style: normal;
     font-size: 20px !important;
     line-height: 30px !important;
-    margin: 0 0 20px !important;
+    margin: 0 0 10px !important;
     font-family: 'Optima' !important;
     color: #0b4a35 !important;
     padding: 0;
@@ -1931,7 +2050,7 @@ Feauture One
 
 .investment_content {
     /* color: #000 !important; */
-    font-family: 'Lato', sans-serif !important;
+    font-family: 'LatoBold', sans-serif !important;
     font-size: 18px !important;
     font-weight: 500 !important;
     line-height: 28px !important;
@@ -1964,7 +2083,7 @@ Feauture One
     position: relative;
     display: block;
     /* background: var(--thm-gray-bg); */
-    padding: 20px 40px 20px;
+    padding: 10px 20px 20px;
     margin-bottom: 30px;
     z-index: 1;
 }
@@ -1972,11 +2091,10 @@ Feauture One
 .highlighted {
     position: relative;
     display: block;
-    padding: 20px 40px 20px;
+    padding: 10px 20px 12px;
     margin-bottom: 30px;
     z-index: 1;
     background-color: #0b4a35;
-    min-height: 240px;
 }
 
 .feauture-one__single::before {
@@ -4906,7 +5024,8 @@ Shop Details
     flex: none;
     height: 60px;
     color: var(--thm-black);
-    font-size: 16px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif !important;
     font-weight: 500;
     outline: none;
     margin: 0 auto;
@@ -7028,7 +7147,14 @@ Project Four Css
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
 
-     .row {
+    .why_c {
+        gap: 15px;
+        display: flex;
+        /* justify-content: space-between; */
+        margin-bottom: 15px;
+    }
+
+    .row {
   margin-left: -5px;
   margin-right: -5px;
 }
@@ -7037,13 +7163,6 @@ Project Four Css
   padding-left: 5px;
   padding-right: 5px;
 }
-
-    .why_c {
-        gap: 15px;
-        display: flex;
-        /* justify-content: space-between; */
-        margin-bottom: 15px;
-    }
 
     .service_num {
         margin-bottom: 0px !important;
@@ -8326,6 +8445,23 @@ Project Four Css
 
 @media only screen and (max-width: 991px) {
 
+        #lp-pom-image-1223 .lp-pom-image-container img {
+        width: calc(320px * var(--scale, 1));
+        height: calc(221px * var(--scale, 1));
+    }
+
+     .team_listing_styling {
+        margin-left: 0px !important;
+    }
+
+    .main_banner {
+    height: 100%;
+}
+
+    .contact-form {
+        margin-left: 0;
+    }
+
     .feauture-one__single { 
         padding: 20px !important;
         padding-left: 10px !important;
@@ -8447,7 +8583,7 @@ Project Four Css
 }
 
 .about_spacing {
-    padding: 80px 0 0;
+    padding: 0 0 0;
 }
 
 .everyday_gateway {
@@ -8488,6 +8624,34 @@ Project Four Css
 
 @media only screen and (max-width: 767px) {
 
+    .line-break {
+    display: block;
+  }
+
+    .centerize {
+    display: flex !important;
+    justify-content: center !important;
+    text-align: justify !important;
+    }
+
+    .privacy_policy_footer {
+    margin-top: 13px !important;
+}
+
+    .qr_container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .map_background {
+        height: 300px;
+    }
+
+    .sub_heading {
+    font-size: 30px !important;
+    line-height: 38px !important;
+}
+
     .highlighted {
         margin-bottom: 10px;
     }
@@ -8496,7 +8660,15 @@ Project Four Css
     font-size: 14px !important;
 }
 
+ .about_paragraph_span {
+    font-size: 14px !important;
+}
+
 .about_para {
+    font-size: 14px !important;
+}
+
+.about_paragraph {
     font-size: 14px !important;
 }
 
@@ -8510,11 +8682,11 @@ Project Four Css
     }
 
     .welcome_emaar_styling_span {
-        font-size: 30px !important;
+        font-size: 28px !important;
     }
 
     .why_invest {
-        font-size: 30px !important;
+        font-size: 28px !important;
     }
 
     .gallery_container_styling {
@@ -8704,3 +8876,17 @@ padding-left: 30px !important;
     font-size: 0.7rem;
 }
 } */
+
+@media only screen and (max-width: 409px) {
+    .contact-box {
+    flex-direction: column; /* stack number + email */
+    gap: 4px;
+     display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .contact-box .contact-separator {
+    display: none;
+  }
+}

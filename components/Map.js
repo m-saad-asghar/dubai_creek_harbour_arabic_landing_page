@@ -15,23 +15,18 @@ export default function Map() {
             <div className="container banner_container_main_feature map_styling component_container" dir="rtl">
               <div>
                                     <p className="small_heading">
-                                        التفاصيل
+                                        تفاصيل
+
                                     </p>
                                 </div>
                 <div className="sec-title" style={{marginTop: 15, paddingBottom: 0}}>
                                     <h2 className="why_invest">خريطة دبي</h2>
                                 </div>
-
-                                <div>
-                                    <Image
-    src="/assets/icon/map.png"
-    alt="emaar_logo"
-    height={40}
-    width={300}
-    style={{ height: "100%", width: "100%" }}
-  />
-                                </div>
                             
+            </div>
+
+            <div className="map_background">
+
             </div>
 
             <div className="btn_style_map">

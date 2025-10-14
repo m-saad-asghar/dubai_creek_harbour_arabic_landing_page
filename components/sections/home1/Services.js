@@ -21,17 +21,15 @@ export default function Features() {
                 <div className="sec-title" style={{marginTop: 15, paddingBottom: 0}}>
                                     <h2 className="why_invest">لماذا إعمار؟</h2>
                                 </div>
-                                <p className="about_para services_cont">
-                                    <span className="about_para_span">
-                                    إعمار العقارية، إحدى أكثر شركات التطوير العقاري تكاملاً وقيمةً وإعجابًا في العالم، تشكل أسلوب حياة المستقبل. عندما تشتري عقارًا من إعمار، فأنت تستثمر في اسم يمكنك الوثوق به، وأسلوب حياة يمكنك الاستمتاع به، ومجتمع يمكنك الازدهار فيه، وكل ذلك ضمن مدينة تتحقق فيها الأحلام.
-                                    </span>
+                                <p className="about_paragraph services_cont">
+                                    <span className="about_paragraph_span">إعمار العقارية، واحدة من أكثر شركات التطوير العقاري تكاملاً وقيمة وإعجابًا في العالم، تشكل أساليب حياة المستقبل. عند شراء عقار من إعمار، فإنك تستثمر في اسم يمكنك الوثوق به، وأسلوب حياة يمكنك الاستمتاع به، ومجتمع يمكنك الازدهار فيه، كل ذلك داخل مدينة تتحقق فيها الأحلام.</span>
                                 </p>
                 <div className="row service_c">
 
                     <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div className="highlighted" 
                         >
-                            <div className="feauture-one__single-text">
+                            <div className="feauture-one__single-text min_hei">
 
                              <div className="why_c">
                                <div className="feauture-one__single-bottom">
@@ -44,11 +42,11 @@ export default function Features() {
                             </div>
 
  <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
-<span className="investment_content_para service_num" style={{color: "#ffffff"}}>+116,500</span></h3>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>116,500+</span></h3>
                              </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>وحدات تم تسليمها حتى يوليو 2024.</span>
+  <span className="about_paragraph_span" style={{color: "#ffffff"}}>الوحدات المسلمة حتى يوليو 2024.</span>
 </p> 
                             </div>
                         </div>
@@ -57,7 +55,7 @@ export default function Features() {
                      <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div className="highlighted"
                         >
-                            <div className="feauture-one__single-text">
+                            <div className="feauture-one__single-text min_hei">
 
                                <div className="why_c">
                                 <div className="feauture-one__single-bottom">
@@ -70,11 +68,11 @@ export default function Features() {
                             </div>
 
  <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
-<span className="investment_content_para service_num" style={{color: "#ffffff"}}>+30,000</span></h3>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>30,000+</span></h3>
                               </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>مساكن قيد التطوير في الإمارات العربية المتحدة.</span>
+  <span className="about_paragraph_span" style={{color: "#ffffff"}}>المساكن قيد التطوير في الإمارات.</span>
 </p> 
                             </div>
                         </div>
@@ -83,7 +81,7 @@ export default function Features() {
                      <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div className="highlighted"
                         >
-                            <div className="feauture-one__single-text">
+                            <div className="feauture-one__single-text min_hei">
 
                               <div className="why_c">
                                <div className="feauture-one__single-bottom">
@@ -100,7 +98,7 @@ export default function Features() {
                              </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>زيادة في مبيعات العقارات في النصف الأول من عام 2024.</span>
+  <span className="about_paragraph_span" style={{color: "#ffffff"}}>زيادة في مبيعات العقارات خلال النصف الأول من 2024.</span>
 </p> 
                             </div>
                         </div>
@@ -109,7 +107,7 @@ export default function Features() {
                      <div className="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div className="highlighted"
                         >
-                            <div className="feauture-one__single-text">
+                            <div className="feauture-one__single-text min_hei">
 
                               <div className="why_c">
                                <div className="feauture-one__single-bottom">
@@ -122,11 +120,11 @@ export default function Features() {
                             </div>
 
  <h3 className="investment_content service_num" style={{color: "#ffffff"}}>
-<span className="investment_content_para service_num" style={{color: "#ffffff"}}>+12 دولة</span></h3>
+<span className="investment_content_para service_num" style={{color: "#ffffff"}}>12+ دولة</span></h3>
                              </div>
 
 <p className="investment_text" style={{color: "#ffffff"}}>
-  <span className="about_para_span" style={{color: "#ffffff"}}>حضور قوي في الأسواق العالمية.</span>
+  <span className="about_paragraph_span" style={{color: "#ffffff"}}>حضور قوي في الأسواق العالمية.</span>
 </p> 
                             </div>
                         </div>

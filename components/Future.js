@@ -6,6 +6,7 @@ export default function Future() {
     return (
         <>
             <section className="about-one future_styling" id="about-us">
+                {/* <div className="shape1 float-bob-y"><img src="assets/img/shape/about-v1-shape1.png" alt=""/></div> */}
                 <div className="container banner_container_main_except component_container" dir="rtl">
                     <div className="row minus_styling">
 
@@ -19,89 +20,98 @@ export default function Future() {
                                     </h2>
                                 </div>
 
+                                {/* <div className="text-box">
+                                    <h3 className="about_subheading">"Our goal is to build sustainable, livable, and dynamic urban spaces for generations to come."</h3>
+                                </div> */}
+
                                 <div className="text-box">
-<p className="about_para">
-    <span className="about_para_span">اختبر المزيج المثالي من الهدوء والعافية والرقي في خور دبي، المجتمع الحيوي الذي يجمع بين أسلوب الحياة الهادئ على الواجهة المائية والممشى النابض بالحياة ومرافق الرفاهية والإطلالات الخلابة على الخور وأفق دبي الساحر. استمتع بجلسات اليوغا عند شروق الشمس، أو بتناول الطعام في الهواء الطلق، أو بنزهة هادئة على الممشى الخلاب. التقط أجمل صور الغروب على الخور، أو انطلق في جولة بحرية لتستكشف معالم دبي الأيقونية من منظور جديد.</span>
+<p className="about_paragraph">
+    <span className="about_paragraph_span">اكتشف التناغم المثالي بين السكينة والعافية والرقي في خور دبي. حيث يجمع هذا المجتمع النابض بالحياة بين هدوء الإطلالات المائية وحيوية المنتزهات والممرات والمرافق الصحية والمشاهد الخلابة للمارينا وأفق دبي.</span>
 </p><br/>
 
-<p className="about_para">
-    <span className="about_para_span">استرخِ بجانب المسبح اللامتناهي المطل على برج خليفة، أو تجوّل بالدراجة في أجواء مريحة بين مرافق المجتمع. سواء كنت تبحث عن منزل أحلامك أو فرصة استثمارية مميزة، فإن خور دبي يقدم لك قيمة لا تُضاهى. اختر من بين شقق أنيقة بغرفة إلى ثلاث غرف نوم، أو منازل عائلية فسيحة، أو بنتهاوس فاخرة، جميعها مصممة بأسلوب عصري واهتمام دقيق بأدق التفاصيل.</span>
+<p className="about_paragraph">
+    <span className="about_paragraph_span">استمتع بتمارين اليوغا عند شروق الشمس على ضفاف المياه، أو بتجارب تناول الطعام في الهواء الطلق، أو بنزهة هادئة على طول الخور الساحر. كما يمكنك الاسترخاء بجانب حوض سباحة لامتناهي يطل على برج خليفة، أو استكشاف الحي في جولة بالدراجة الهوائية.</span>
+</p><br/>
+
+<p className="about_paragraph">
+    <span className="about_paragraph_span">سواء كنت تبحث عن منزل الأحلام أو فرصة استثمارية واعدة، يقدم خور دبي قيمة استثنائية مع مجموعته من الشقق الفاخرة المكونة من غرفة إلى ثلاث غرف نوم، والمنازل العائلية، والبنتهاوس الفاخرة — جميعها مصممة بأناقة عصرية وجودة عالمية.</span>
 </p>
                                 </div>
 
                                 <div className="row future_row">
                                 
-  <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="feauture-one__single">
-      <div className="feauture-one__single-text">
+                                                    {/* <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                                        <div className="feauture-one__single" 
+                                                        >
+                                                            <div className="feauture-one__single-text">
+                                
+                                                              <div className="feauture-one__single-bottom">
+                                                                <div className="icon-box">
+                                                                    <span className="icon-plane">
+                                <FaBuilding className="icon-plane" size={30}/> 
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                            </div>
 
-        <div className="feauture-one__single-bottom">
-          <div className="icon-box">
-            <span className="icon-plane">
-              <FaBuilding className="icon-plane" size={30}/> 
-            </span>
-          </div>
-        </div>
+                                <h3 className="investment_content">
+<span className="investment_content_para">711,399 sqm</span></h3>
+                                
+                                <p className="investment_text">
+    <span className="about_paragraph_span">Serviced Apartments.</span>
+</p>
+                                                            </div>
+                                                        </div>
+                                                    </div> */}
+                                                  {/* <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                                        <div className="feauture-one__single" 
+                                                        >
+                                                            <div className="feauture-one__single-text">
+                                
+                                                              <div className="feauture-one__single-bottom">
+                                                                <div className="icon-box">
+                                                                    <span className="icon-plane">
+                                <FaCity className="icon-plane" size={30}/> 
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                            </div>
 
-        <h3 className="investment_content">
-          <span className="investment_content_para">711,399 متر مربع</span>
-        </h3>
+                                <h3 className="investment_content">
+<span className="investment_content_para">7.4 million sqm</span></h3>
+                            
+                                <p className="investment_text">
+    <span className="about_paragraph_span">Residential Space.</span>
+</p>
+                                                            </div>
+                                                        </div>
+                                                    </div> */}
+                                
+                                                     {/* <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                                        <div className="feauture-one__single" 
+                                                        >
+                                                            <div className="feauture-one__single-text">
+                                
+                                                              <div className="feauture-one__single-bottom">
+                                                                <div className="icon-box">
+                                                                    <span className="icon-plane">
+                                <FaTree className="icon-plane" size={30}/> 
+                                                                    </span>
+                                                                    
+                                                                </div>
+                                                            </div>
 
-        <p className="investment_text">
-          <span className="about_para_span">شقق فندقية.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="feauture-one__single">
-      <div className="feauture-one__single-text">
-
-        <div className="feauture-one__single-bottom">
-          <div className="icon-box">
-            <span className="icon-plane">
-              <FaCity className="icon-plane" size={30}/> 
-            </span>
-          </div>
-        </div>
-
-        <h3 className="investment_content">
-          <span className="investment_content_para">7.4 مليون متر مربع</span>
-        </h3>
-
-        <p className="investment_text">
-          <span className="about_para_span">مساحة سكنية.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-    <div className="feauture-one__single">
-      <div className="feauture-one__single-text">
-
-        <div className="feauture-one__single-bottom">
-          <div className="icon-box">
-            <span className="icon-plane">
-              <FaTree className="icon-plane" size={30}/> 
-            </span>
-          </div>
-        </div>
-
-        <h3 className="investment_content">
-          <span className="investment_content_para">500,000 متر مربع</span>
-        </h3>
-
-        <p className="investment_text">
-          <span className="about_para_span">حدائق ومساحات مفتوحة.</span>
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
-
+<h3 className="investment_content">
+<span className="investment_content_para">500,000 sqm</span></h3>
+                                
+                                <p className="investment_text">
+    <span className="about_paragraph_span">Parks & Open Spaces.</span>
+</p>
+                                                            </div>
+                                                        </div>
+                                                    </div> */}
+                                
+                                                </div>
                             </div>
                         </div>
 
@@ -116,7 +126,7 @@ export default function Future() {
               if (element) element.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            سجّل اهتمامك
+            سجل اهتمامك
           </button>
 </div>
                 

@@ -131,7 +131,7 @@ export default function Banner() {
     <section className="main-slider main-slider-one" id="home">
       <Swiper {...swiperOptions} className="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none">                    
         <SwiperSlide className="swiper-slide">
-          <div className="image-layer" 
+          <div className="image-layer main_banner" 
           style={{backgroundImage: 'url(assets/img/slider/emaar_img_2.jpg)'}}
           >
             </div>
@@ -143,18 +143,21 @@ export default function Banner() {
   <Image
     src="/assets/icon/emaar_logo.png"
     alt="emaar_logo"
-    height={55}
+    height={30}
     width={300}
-    style={{ height: "55px", width: "auto" }}
+    style={{ height: "30px", width: "auto" }}
   />
 </Link>
 
   <div className="row banner_container">
-    <div className="col-lg-6 col-md-12">
+    <div className="col-lg-7 col-md-12">
       <div className="main-slider-one__content">
         <div className='banner_text_container'>
           <p className='heading_middle heading'>خـــور دبـــي</p>
-          <h1 className='heading_middle sub_heading'>منازل فاخرة تبدأ من 1.7 مليون درهم إماراتي*</h1>
+         <h1 className="heading_middle sub_heading">
+  منازل فاخرة تبدأ من <span className="line-break">1.7 مليون درهم إماراتي*</span>
+</h1>
+
         <p className='heading_middle content'>احصل على عوائد استثنائية من استثمارك العقاري في أكثر المواقع طلبًا في دبي.</p>
         </div>
 
@@ -163,29 +166,26 @@ export default function Banner() {
           <div className="btn-two"></div>
         </div>
 
-        <div className="contact-info">
+        {/* <div className="contact-info">
           <ul>
             <li>
-              {/* <div className="icon-box">
-                <span className="icon-pin"></span>
-              </div> */}
+              
             </li>
 
             <li>
-              {/* <div className="icon-box">
-                <span className="icon-envelope"></span>
-              </div> */}
+              
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className='resp_usd'>
-        <p className='down_styling'>
-          463,000 * دولار أمريكي / 398,000 يورو / 344,000 جنيه إسترليني
-        </p>
+       <p className="down_styling">
+  *463,000 دولار أمريكي / 398,000 يورو / <span className="line-break">344,000 جنيه إسترليني</span>
+</p>
+
       </div>
     </div>
-    <div className="col-lg-1 col-md-12"></div>
+    {/* <div className="col-lg-1 col-md-12"></div> */}
     <div className="col-lg-5 col-md-12">
       <div
         className="contact-form"
@@ -200,129 +200,108 @@ export default function Banner() {
         <h3
           className='form_heading'
         >
-          سجّل اهتمامك
+          سجل اهتمامك
         </h3>
 
-      <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <input
-          type="text"
-          name="name"
-          placeholder="أدخل اسمك"
-          className="form-control input_styling"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-      </div>
+     <form onSubmit={handleSubmit}>
+  <div className="mb-3">
+    <label htmlFor="keepUpdated" className='checkbox_text'>
+      الاسم الكامل*
+    </label>
+    <input
+      type="text"
+      name="name"
+      placeholder="أدخل الاسم الكامل"
+      className="form-control input_styling"
+      value={formData.name}
+      onChange={handleChange}
+      required
+    />
+  </div>
 
-       <div className="mb-3">
-        <input
-          type="email"
-          name="email"
-          placeholder="أدخل عنوان بريدك الإلكتروني"
-          className="form-control input_styling"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
+  <div className="mb-3">
+    <label htmlFor="keepUpdated" className='checkbox_text'>
+      البريد الإلكتروني*
+    </label>
+    <input
+      type="email"
+      name="email"
+      placeholder="أدخل بريدك الإلكتروني"
+      className="form-control input_styling"
+      value={formData.email}
+      onChange={handleChange}
+      required
+    />
+  </div>
 
-      <div className="mb-3">
+  <div className="mb-3">
+    <label htmlFor="keepUpdated" className='checkbox_text'>
+      رقم الهاتف*
+    </label>
+    <PhoneInput
+      name="phone"
+      country={"ae"}
+      value={formData.phone}
+      onChange={(value) =>
+        setFormData({
+          ...formData,
+          phone: value,
+        })
+      }
+      countryCodeEditable={false}
+      required
+      inputStyle={{
+        width: "100%",
+        borderRadius: "0",
+        border: "1px solid #000",
+        height: "50px",
+      }}
+    />
+  </div>
 
-        <PhoneInput
-  name="phone"
-  country={"ae"}
-  value={formData.phone}
-  onChange={(value) =>
-    setFormData({
-      ...formData,
-      phone: value,
-    })
-  }
-  countryCodeEditable={false}
-  required
-  inputStyle={{
-    width: "100%",
-    borderRadius: "0",
-    border: "1px solid #000",
-    height: "50px",
-  }}
-/>
+  <p className='form_text'>
+    يرجى زيارة <a 
+      href="/privacy-policy" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className='privacy_policy'
+    >
+      سياسة الخصوصية
+    </a> لفهم كيفية تعامل إعمار مع بياناتك الشخصية.
+  </p>
 
-        {/* <input
-          type="tel"
-          name="phone"
-          placeholder="Enter Your Phone Number"
-          className="form-control input_styling"
-          value={formData.phone}
-          onChange={handleChange}
-          required
-        /> */}
-      </div>
+  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 24 }}>
+    <input
+      type="checkbox"
+      id="keepUpdated"
+      name="keepUpdated"
+      checked={keepUpdated}
+      onChange={(e) => setKeepUpdated(e.target.checked)}
+      style={{ cursor: 'pointer' }}
+      className="modern-checkbox"
+    />
+    <label htmlFor="keepUpdated" className='checkbox_text'>
+      أرغب في تلقي التحديثات حول الأخبار والعروض
+    </label>
+  </div>
 
-      <p className='form_text'>
-  يُرجى زيارة <a 
-    href="/privacy-policy" 
-    target="_blank" 
-    rel="noopener noreferrer"
-    className='privacy_policy'
+  <button
+    disabled={disableBtn}
+    type="submit"
+    className="btn w-100"
+    style={{
+      backgroundColor: '#9f8151',
+      color: '#fff',
+      border: 'none',
+      padding: '10px 20px',
+      fontWeight: '600',
+      textTransform: "uppercase"
+    }}
   >
-    سياسة الخصوصية
-  </a> لفهم كيفية تعامل إعمار مع بياناتك الشخصية.
-</p>
+    <label className='submit_form_btn'>إرسال</label>
+  </button>
+</form>
 
-        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: 20 }}>
-      <input
-        type="checkbox"
-        id="keepUpdated"
-        name="keepUpdated"
-        checked={keepUpdated}
-        onChange={(e) => setKeepUpdated(e.target.checked)}
-        style={{ cursor: 'pointer' }}
-        className="modern-checkbox"
-      />
-      <label htmlFor="keepUpdated" className='checkbox_text'>
-        أبقني على اطلاع بالأخبار والعروض
-      </label>
-    </div>
-
-
-
-      {/* <div className="mb-3">
-        <textarea
-          name="message"
-          rows="3"
-          placeholder="Your Message"
-          className="form-control"
-          value={formData.message}
-          onChange={handleChange}
-          style={{
-            borderRadius: '8px',
-            border: '1px solid #ccc',
-            resize: 'none',
-          }}
-          required
-        ></textarea>
-      </div> */}
-
-      <button
-      disabled={disableBtn}
-        type="submit"
-        className="btn w-100"
-        style={{
-          backgroundColor: '#9f8151',
-          color: '#fff',
-          border: 'none',
-          padding: '10px 20px',
-          // borderRadius: '8px',
-          fontWeight: '600',
-          textTransform: "uppercase"
-        }}
-      >
-       <label className='submit_form_btn'>إرسال</label>
-      </button>
-    </form>
       </div>
     </div>
   </div>
@@ -338,4 +317,3 @@ export default function Banner() {
     </>
   );
 };
-
