@@ -52,7 +52,7 @@ export default function Banner() {
 
   const payload = {
     fields: {
-      TITLE: `Dubai Creek Harbour Landing Page`,
+      TITLE: `Dubai Creek Harbour Arabic Landing Page`,
       NAME: formData.name,
       PHONE: [
         {
@@ -69,7 +69,7 @@ export default function Banner() {
       SOURCE_DESCRIPTION: formData.message,
       SOURCE_ID: "WEB",
       ASSIGNED_BY_ID: 25,
-      UF_CRM_1754652292782: "Dubai Creek Harbour Landing Page",
+      UF_CRM_1754652292782: "Dubai Creek Harbour Arabic Landing Page",
     },
     params: {
       REGISTER_SONET_EVENT: "Y",
