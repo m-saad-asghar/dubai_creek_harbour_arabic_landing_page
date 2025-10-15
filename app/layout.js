@@ -4,6 +4,7 @@ import 'swiper/css'
 // import "swiper/css/navigation"
 import "swiper/css/pagination"
 import 'swiper/css/free-mode';
+import Script from 'next/script';
 import { dM_Sans, } from '@/lib/font'
 import { Toaster } from 'react-hot-toast';
 export const metadata = {
@@ -14,6 +15,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
          <html lang="en" className={`${dM_Sans.variable}`}>
+            <head>
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9Y6NWBS0WZ"
+        />
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-9Y6NWBS0WZ');
+          `}
+        </Script>
+      </head>
             <body>
                 {children}
                 <Toaster position="top-right" reverseOrder={false} />
