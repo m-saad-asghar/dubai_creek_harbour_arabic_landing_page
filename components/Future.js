@@ -5,7 +5,7 @@ import { FaBuilding, FaCity, FaDollarSign, FaGift, FaHouseUser, FaTree } from "r
 export default function Future() {
     return (
         <>
-            <section className="about-one future_styling" id="about-us">
+            <section className="about-one future_styling" id="the-future-of-waterfront-living">
                 {/* <div className="shape1 float-bob-y"><img src="assets/img/shape/about-v1-shape1.png" alt=""/></div> */}
                 <div className="container banner_container_main_except component_container" dir="rtl">
                     <div className="row minus_styling">

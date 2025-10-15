@@ -11,7 +11,7 @@ export default function Features() {
         <>
         
         {/*Start Feauture One*/}
-        <section className="feauture-one service_padding" id="around-the-corner" style={{paddingTop: 0}}>
+        <section className="feauture-one service_padding" id="why-emaar" style={{paddingTop: 0}}>
             <div className="container banner_container_main_feature component_container" dir="rtl">
               <div>
                                     <p className="small_heading">

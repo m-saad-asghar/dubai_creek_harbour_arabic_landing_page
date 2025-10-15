@@ -353,6 +353,10 @@ font-size: 15px !important;
     font-weight: 300 !important;
 }
 
+.number_styling {
+    font-family: 'Lato', sans-serif !important;
+}
+
 .contact-box {
   display: flex;
   flex-wrap: wrap;
@@ -438,7 +442,7 @@ font-size: 15px !important;
   font-family: 'Lato', sans-serif !important;
   position: relative;
   display: inline-block; /* ensures line aligns properly */
-  padding-right: 15px; /* spacing before the line */
+  /* padding-right: 15px; */
 }
 .contact-form {
     margin-left: 30px;

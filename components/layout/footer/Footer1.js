@@ -6,7 +6,7 @@ export default function Footer1() {
     return (
         <>
             {/*Start Footer One */}
-            <footer className="footer-one">
+            <footer className="footer-one" id="emaar-footer">
                 {/* <div className="shape1"><img className="float-bob-y" src="assets/img/shape/footer-v1-shape1.png" alt=""/></div> */}
                 {/*Start Footer Main */}
                 <div className="footer-main">
@@ -29,10 +29,10 @@ export default function Footer1() {
 
                                     <div className="footer-widget__about-inner footer_spacing">
                                         <div className="text-box centerize">
-                                            <p style={{color: "#ffffff"}}>المكتب رقم 2101، الطابق الحادي والعشرون، برج بوليفارد بلازا 1، وسط مدينة دبي، الإمارات العربية المتحدة</p>
+                                            <p style={{color: "#ffffff"}}>المكتب رقم 2101، الطابق 21، برج بوليفارد بلازا 1، وسط مدينة دبي، الإمارات العربية المتحدة</p>
                                         </div>
                                         <div className="contact-box centerize">
-  <Link href="tel:97145776496">+971 (0)4 577 6496</Link>
+  <Link href="tel:97145776496" dir="ltr">+971 (0)4 577 6496</Link>
   <span className="contact-separator seperater">|</span>
   <a href="mailto:info@shiroestate.ae">info@shiroestate.ae</a>
 </div>

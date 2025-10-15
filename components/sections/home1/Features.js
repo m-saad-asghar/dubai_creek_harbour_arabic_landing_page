@@ -11,7 +11,7 @@ export default function  Features() {
         <>
         
         {/*Start Feauture One*/}
-        <section className="feauture-one feature_wrap" id="around-the-corner">
+        <section className="feauture-one feature_wrap" id="why-invest-in-dubai">
             <div className="container banner_container_main_feature component_container" dir="rtl">
               <div>
                                     <p className="small_heading">
@@ -42,7 +42,11 @@ export default function  Features() {
 <a href="javascript:void(0);">عوائد إيجارية أعلى</a></h2>
 
 <p className="investment_text">
-  <span className="about_para_span">عوائد الإيجار الإجمالية للمستثمرين تتراوح بين 5% و 9%.</span>
+  <span className="about_para_span">
+  عوائد الإيجار الإجمالية للمستثمرين تتراوح بين
+  <span className="number_styling"> 5%</span> و
+  <span className="number_styling"> 9%</span>.
+</span>
 </p> 
                             </div>
                         </div>
@@ -265,7 +269,11 @@ export default function  Features() {
 <a href="javascript:void(0);">
 مكافآت إعمار U</a></h2>
 <p className="investment_text">
-  <span className="about_para_span">استثمر 20 مليون درهم+ للبلاتينيوم، 10 مليون درهم+ للذهبي.</span>
+<span className="about_para_span">
+  استثمر <span className="number_styling">20 مليون درهم+</span> للبلاتينيوم، 
+  <span className="number_styling">10 مليون درهم+</span> للذهبي.
+</span>
+
 </p>
                             </div>
                         </div>

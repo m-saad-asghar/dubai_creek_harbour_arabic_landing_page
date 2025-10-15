@@ -11,7 +11,7 @@ export default function Map() {
         <>
         
         {/*Start Feauture One*/}
-        <section className="feauture-one map_cont service_padding" id="around-the-corner" style={{paddingTop: 0}}>
+        <section className="feauture-one map_cont service_padding" id="dubai-map" style={{paddingTop: 0}}>
             <div className="container banner_container_main_feature map_styling component_container" dir="rtl">
               <div>
                                     <p className="small_heading">
