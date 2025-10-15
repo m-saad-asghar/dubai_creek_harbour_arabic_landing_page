@@ -10,6 +10,7 @@ import BitrixForm from '@/components/BitrixForm';
 import Image from 'next/image';
 import toast from 'react-hot-toast';
 import PhoneInput from "react-phone-input-2";
+import { useRouter } from 'next/navigation';
 import 'react-phone-input-2/lib/style.css';
 
 const swiperOptions = {
@@ -30,6 +31,7 @@ const swiperOptions = {
 }
 
 export default function Banner() {
+  const router = useRouter();
     const [isOpen, setOpen] = useState(false)
     const [keepUpdated, setKeepUpdated] = useState(true);
      const [disableBtn, setDisableBtn] = useState(false)
@@ -93,12 +95,13 @@ export default function Banner() {
    setDisableBtn(false);
 
     if (result.result) {
-      toast.success(
-  "Thank you for reaching out. Your inquiry has been received and we will contact you soon.",
-  {
-    duration: 5000, 
-  }
-);
+      router.push('/thank-you');
+//       toast.success(
+//   "Thank you for reaching out. Your inquiry has been received and we will contact you soon.",
+//   {
+//     duration: 5000, 
+//   }
+// );
       setFormData({
         name: "",
         phone: "",
