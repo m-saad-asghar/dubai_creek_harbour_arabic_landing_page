@@ -16,24 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dM_Sans.variable}`}>
       <head>
-        {/* Google tag (gtag.js) for both Ads and Analytics */}
-        <Script
-          strategy="afterInteractive"
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17654430780"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            
-            // Google Ads
-            gtag('config', 'AW-17654430780');
-            // Google Analytics
-            gtag('config', 'G-3TH6BM8XDQ');
-          `}
-        </Script>
+
       </head>
       <body>
         {children}
