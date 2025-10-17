@@ -8,7 +8,7 @@ import { dM_Sans } from '@/lib/font';
 import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
-  title: 'Dubai Creek Harbour Arabic - EMAAR',
+  title: 'Dubai Creek Harbour AR - EMAAR',
   description: 'Project by Emaar',
 };
 
