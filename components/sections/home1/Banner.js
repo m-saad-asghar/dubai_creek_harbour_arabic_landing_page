@@ -76,7 +76,7 @@ export default function Banner() {
       TITLE: `Dubai Creek Harbour AR Landing Page`,
       ORIGIN: originValue,
       NAME: formData.name,
-      PHONE_TEXT: form.phone,
+      PHONE_TEXT: formData.phone,
       PHONE: [
         {
           VALUE: formData.phone,
