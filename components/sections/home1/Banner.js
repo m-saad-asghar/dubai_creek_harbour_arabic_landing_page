@@ -74,7 +74,7 @@ export default function Banner() {
   const payload = {
     fields: {
       TITLE: `Dubai Creek Harbour AR Landing Page`,
-      ORIGIN: originValue,
+      UF_CRM_1760777561731: originValue,
       NAME: formData.name,
       PHONE_TEXT: formData.phone,
       PHONE: [
