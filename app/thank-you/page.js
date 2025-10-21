@@ -90,14 +90,14 @@ export default function ThankYou() {
     </div>
     {/* ✅ Google Analytics Event Script */}
       <Script id="lead-submission-ar" strategy="afterInteractive">
-        {`
-          gtag('event', 'lead_submission_dch_ar', {
-            lead_language: 'arabic',
-            project_name: 'dubai_creek_harbour',
-            landing_page: 'dch_ar'
-          });
-        `}
-      </Script>
+      {`
+        window.gtag('event', 'lead_submission_dch_ar', {
+          lead_language: 'arabic',
+          project_name: 'dubai_creek_harbour',
+          landing_page: 'dch_ar'
+        });
+      `}
+    </Script>
     </>
   );
 }
