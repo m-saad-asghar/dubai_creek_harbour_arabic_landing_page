@@ -32,6 +32,17 @@ export default function ThankYou() {
   }, [router]);
 
   return (
+    <>
+    {/* ✅ Google Analytics Event Script */}
+      <Script id="lead-submission-ar" strategy="afterInteractive">
+        {`
+          gtag('event', 'lead_submission', {
+            lead_language: 'arabic',
+            project_name: 'dubai_creek_harbour',
+            landing_page: 'dch_ar'
+          });
+        `}
+      </Script>
     <div
       style={{
         display: 'flex',
@@ -86,5 +97,6 @@ export default function ThankYou() {
         </div>
       </div>
     </div>
+    </>
   );
 }
