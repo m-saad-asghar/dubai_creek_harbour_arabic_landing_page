@@ -16,20 +16,21 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dM_Sans.variable}`}>
       <head>
-{/* Google tag (gtag.js) */}
-      <Script
-        strategy="afterInteractive"
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-KXZ1V7HTLS"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-KXZ1V7HTLS');
-        `}
-      </Script>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-85BT7ZFTFS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-85BT7ZFTFS');
+          `}
+        </Script>
+
       {/* Meta Pixel Code */}
         <Script
           id="facebook-pixel"
@@ -50,20 +51,6 @@ export default function RootLayout({ children }) {
           }}
         />
         {/* End Meta Pixel Code */}
-
-        {/* Google Tag (gtag.js) */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-KXZ1V7HTLS"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-KXZ1V7HTLS');
-        `}
-      </Script>
       </head>
       <body>
         {children}
