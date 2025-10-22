@@ -75,8 +75,8 @@ export default function Banner() {
   if (!formData.phone) {
     setPhoneError("رقم الهاتف مطلوب");
     return;
-} else if (formData.phone.length < 11 || formData.phone.length > 13) {
-  setPhoneError("يجب أن يكون رقم الهاتف بين 11 و13 رقمًا");
+} else if (formData.phone.length < 9 || formData.phone.length > 15) {
+  setPhoneError("يجب أن يكون رقم الهاتف بين 9 و15 رقمًا");
   return;
 }else{
   setPhoneError("");
