@@ -98,6 +98,15 @@ export default function Banner() {
  let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
  formData.phone = phone
 
+   const payload_email = {
+    LANDING_PAGE: "Dubai Creek Harbour AR Landing Page",
+    ORIGIN: originValue,
+    COUNTRY: countryValue,
+    NAME: formData.name,
+    PHONE_TEXT: formData.phone,
+    EMAIL: formData.email,
+  };
+
   const payload = {
     fields: {
       TITLE: `Dubai Creek Harbour AR Landing Page`,
@@ -126,6 +135,21 @@ export default function Banner() {
       REGISTER_SONET_EVENT: "Y",
     },
   };
+
+  async function sendLeadEmail() {
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload_email),
+    });
+
+    const data = await res.json();
+    console.log("Email sent:", data);
+  } catch (err) {
+    console.error("Error sending email:", err);
+  }
+}
 
   try {
     setDisableBtn(true);
@@ -157,6 +181,7 @@ export default function Banner() {
         email: "",
         message: "",
       });
+      await sendLeadEmail();
     } else {
       setDisableBtn(false);
       toast.error(
